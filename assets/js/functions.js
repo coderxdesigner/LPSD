@@ -11,4 +11,22 @@ class MobileMenu {
     this.menuContent.classList.toggle("active")
   }
 }
+
+class Search {
+  constructor() {
+    this.button = document.getElementById("search-open")
+    this.icon = document.getElementById("searchIco")
+    this.input = document.getElementById("search_input")
+    this.events()
+  }
+  events() {
+    this.button.addEventListener("click", () => this.toggleMenu())
+  }
+  toggleMenu() {
+    this.input.classList.toggle("active")
+    this.icon.classList.toggle("active")
+    this.icon.classList.add("spin")
+  }
+}
+new Search()
 new MobileMenu()

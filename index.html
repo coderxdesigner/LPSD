@@ -19,8 +19,8 @@
       </nav>
       <nav id="lg-menu" class="lg-menu">
           <div class="nav-itm"><a href="#" class="nav-lnk">Home</a></div>
-          <div class="nav-itm dropdown-title"><a href="" class="nav-lnk">About Us &#9660; </a></div>
-          <div class="dropdown">
+          <div class="nav-itm dropdown-title"><a href="" class="nav-lnk dropdown">About Us</a></div>
+          <div class="dropdown-menu">
             <div class="nav-itm"><a href="" class="nav-lnk">General Information</a></div>
             <div class="nav-itm"><a href="" class="nav-lnk">Lake Park History</a></div>
             <div class="nav-itm"><a href="" class="nav-lnk">In the News</a></div>
@@ -44,11 +44,14 @@
         </div>
       </nav>
       <div class="search-wrapper">
-        <div class="button"><img src="assets/img/icons/ico_search_magnify.svg" alt="Search"></div>
-      </div>
-      <div>
-          <input type="search" name="" id="search"><img src="assets/img/icons/ico_search_arrow.svg" alt="Search Now">
+        <div id="search-open" class="button">
+          <div id="searchIco" class="ico_search"></div>
         </div>
+      </div>
+      <div id="search_input">
+        <input type="search" placeholder="Search..." name="" id="search">
+        <img class="ico_arr" src="assets/img/icons/ico_search_arrow.svg" alt="Search Now">
+      </div>
     </header>
     <main>
       <section>
@@ -140,6 +143,6 @@
     </footer>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="assets/js/functions.js"></script>
-    <script src="assets/js/app.js"></script>
+    
   </body>
 </html>
