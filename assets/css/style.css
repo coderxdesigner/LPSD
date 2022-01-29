@@ -1,0 +1,117 @@
+/*custom global blue - #1c5687*/
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  color: #333;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*text*/
+p,
+header {
+  line-height: 26px;
+  font-family: "Sintony", sans-serif;
+  font-size: 0.9rem;
+}
+header {
+  position: relative;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-white {
+  color: #ffffff;
+}
+.font-bold {
+  font-weight: bold;
+}
+.text-blue {
+  color: #1c5687;
+}
+/*colors*/
+.blue-bg {
+  background-color: #1c5687;
+}
+.white-bg {
+  background-color: #ffffff;
+}
+/*heading tags*/
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Sintony", sans-serif;
+}
+a {
+  color: #1c5687;
+}
+a.nav-lnk {
+  color: #ffffff;
+}
+/*page sections*/
+.pagesection {
+  padding: 1.2rem 0;
+}
+
+/*nav*/
+header {
+  padding: 10px 40px;
+  height: 60px;
+
+  position: relative;
+}
+.lg-menu {
+  display: none;
+}
+.lg-menu.active {
+  padding-top: 10px;
+  display: block;
+  background-color: #1c5687;
+  opacity: 0.9;
+  width: 100%;
+  top: 60px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  max-height: 240px;
+}
+.lg-menu.active .nav-itm {
+  padding-left: 40px;
+  margin: 5px 0px 5px 0px;
+}
+
+.dropdown {
+  display: none;
+  z-index: 1;
+  flex-direction: column; /* or row */
+}
+.mobile {
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  top: 9px;
+}
+.mobile > div:nth-child(2) {
+  padding-left: 10px;
+  font-size: small;
+}
+.search-wrapper {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.button {
+  background-color: #113a55;
+  height: 60px;
+  overflow: hidden;
+  width: 70px;
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+}
