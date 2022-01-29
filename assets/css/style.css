@@ -289,6 +289,7 @@ input[type="search"] {
   .dropdown-title:hover .dropdown-menu {
     position: absolute;
     font-size: small;
+    z-index: 102;
     top: 60px;
     left: 120px;
     line-height: 30px;
@@ -319,9 +320,7 @@ input[type="search"] {
     top: 30px;
     z-index: 2;
   }
-  .ico-wrapper p {
-    font-size: small;
-  }
+
   .ico-itm {
     width: 120px;
     display: flex;
@@ -332,6 +331,12 @@ input[type="search"] {
   .ico_lnk img {
     transform: translateY(0);
     transition: transform 250ms ease-in-out;
+  }
+  .ico_lnk .txt {
+    font-size: small;
+    font-family: "Sintony";
+    position: relative;
+    top: 18px;
   }
   .ico_env,
   .ico_bus,
@@ -352,6 +357,9 @@ input[type="search"] {
   .ico_lnk:hover img {
     transform: translateY(-6px);
     transition: transform 350ms ease-in-out;
+  }
+  .ico_lnk > div:first-child {
+    height: 40px;
   }
   .logo-wrapper {
     position: relative;
