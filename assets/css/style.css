@@ -45,6 +45,8 @@ h2,
 h3,
 h4 {
   font-family: "Sintony", sans-serif;
+  color: #1c5687;
+  font-weight: bolder;
 }
 a {
   color: #1c5687;
@@ -175,6 +177,21 @@ input[type="search"] {
 .ico_arr:hover {
   transform: translateX(7px);
 }
+/*logo section*/
+.ico-wrapper {
+  display: none;
+}
+.logo-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo-section h1 {
+  padding-top: 20px;
+}
+
+/*desktop*/
 @media (min-width: 992px) {
   #mobile {
     display: none;
