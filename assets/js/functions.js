@@ -28,5 +28,6 @@ class Search {
     this.icon.classList.add("spin")
   }
 }
+
 new Search()
 new MobileMenu()
