@@ -101,6 +101,7 @@ header {
 }
 .lg-menu.active {
   padding-top: 10px;
+  padding-bottom: 20px;
   display: block;
   background-color: #1c5687;
   opacity: 0.9;
@@ -109,7 +110,9 @@ header {
   position: absolute;
   left: 0;
   right: 0;
-  max-height: 440px;
+  height: auto;
+  max-height: 600px;
+  z-index: 102;
 }
 .lg-menu.active .nav-itm {
   padding-left: 40px;
@@ -225,6 +228,7 @@ input[type="search"] {
 .slide-wrapper {
   display: flex;
   flex-direction: column;
+  z-index: 10;
 }
 #slideshow {
   flex: 1;
@@ -270,7 +274,6 @@ input[type="search"] {
 }
 .controls {
   display: flex;
-
   width: 150px;
   position: absolute;
   bottom: 5px;
@@ -286,6 +289,10 @@ input[type="search"] {
   padding: 4px;
   border-radius: 2px;
   overflow: hidden;
+  transition: background-color 350ms ease-in-out;
+}
+.controls > div:hover {
+  background-color: rgba(255, 255, 255, 0.65);
 }
 .ico_back_button {
   background-image: url("../img/icons/ico_slide_arrow.svg");
@@ -307,7 +314,7 @@ input[type="search"] {
   text-align: center;
   position: relative;
   background-color: #1c5687;
-  padding: 20px 10px;
+  padding: 20px 40px;
 }
 #side-text h3,
 #side-text p {
@@ -322,6 +329,25 @@ input[type="search"] {
   }
   .logo-section > div:first-child {
     padding-right: 15px;
+  }
+  #side-text {
+    text-align: left;
+  }
+  .button-wrapper > .custom {
+    position: absolute;
+    left: 0%;
+    transform: translateX(0);
+  }
+  .controls {
+    position: absolute;
+
+    transform: translateX(100%);
+  }
+  #slideshow {
+    height: auto;
+    min-height: 400px;
+    max-height: 600px;
+    width: 100%;
   }
 }
 /*desktop*/
