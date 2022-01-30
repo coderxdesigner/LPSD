@@ -101,28 +101,34 @@
           </div>
         </div>
       </section>
-      <section class="slider-wrapper">
-        <div>
+      <section>
+        <div class="slide-wrapper">
           <div>
-            <img src="assets/img/slide_image1.png" alt="Students Return to Normal Life" />
-            <img src="assets/img/slide_image2.png" alt="Lets Play Soccer!" />
+            <div id="slideshow">
+              <div class="slide img1"></div>
+              <div class="slide img2"></div>
+              <div class="slide img3"></div>
+              <div class="slide img4"></div>
+ 
+            </div>
+             <div class="controls">
+                <div class="ico_back_button" title="Back"></div>
+                <div class="ico_pause_button" title="Pause"></div>
+                <div class="ico_forward_button" title="Forward"></div>
+            </div>
           </div>
-          <div class="player">
-            <div><img src="assets/img/icons/ico_slide_arrow.svg" alt="Back" class="player" /></div>
-            <div><img src="assets/img/icons/ico_slide_pause.svg" alt="Pause" class="player" /></div>
-            <div><img src="assets/img/icons/ico_slide_play.svg" alt="Play" class="player" /></div>
-          </div>
-          <div>
-            <h2>Welcome to Our Site!</h2>
+          <div id="side-text">
+            
+            <h3>Welcome to Our Site!</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, alias? Exercitationem tenetur aspernatur ea soluta impedit voluptate numquam doloremque quaerat nisi, suscipit laborum consequuntur. Ullam, commodi quibusdam? Illum, culpa eaque.</p>
-            <button class="button text-uppercase">Learn More</button>
-          </div>
+            <div class="button-wrapper"><button class="custom text-uppercase">Learn More</button></div>
+          </div>   
         </div>
       </section>
       <section class="news-wrapper">
         <div>
           <h2>Current News</h2>
-          <button class="button text-uppercase">More</button>
+          <div><button class="standard text-uppercase">More</button></div>
         </div>
         <div class="news-itms">
           <div>
@@ -159,6 +165,7 @@
         <div></div>
       </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="assets/js/functions.js"></script>
     
   </body>
