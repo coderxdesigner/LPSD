@@ -1,0 +1,27 @@
+@media (min-width: 640px) {
+  .logo-section {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+  }
+  .logo-section > div:first-child {
+    padding-right: 15px;
+  }
+  #side-text {
+    text-align: left;
+  }
+  .button-wrapper > .custom {
+    position: absolute;
+    left: 0%;
+    transform: translateX(0);
+  }
+  .controls-wrapper {
+    align-items: flex-end;
+  }
+  #slideshow {
+    height: auto;
+    min-height: 400px;
+    max-height: 600px;
+    width: 100%;
+  }
+}
