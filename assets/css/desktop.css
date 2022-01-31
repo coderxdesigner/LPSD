@@ -10,8 +10,9 @@
     width: 100%;
   }
   .lg-menu > div {
-    padding: 20px 15px 10px 15px;
+    padding: 25px 15px 10px 15px;
     height: 60px;
+
     transition: background-color 350ms ease-in-out;
   }
 

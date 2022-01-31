@@ -24,4 +24,20 @@
     max-height: 600px;
     width: 100%;
   }
+  .news-wrapper > div:first-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .news-itms {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .news-itms > div {
+    width: 50%;
+    max-width: 300px;
+  }
 }

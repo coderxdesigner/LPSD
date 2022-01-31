@@ -144,6 +144,8 @@ header {
 .mobile > div:nth-child(2) {
   padding-left: 10px;
   font-size: small;
+  position: relative;
+  top: 6px;
 }
 #schools {
   display: none;
@@ -339,4 +341,31 @@ input[type="search"] {
 #side-text h3,
 #side-text p {
   color: #fff !important;
+}
+.news-wrapper {
+  padding: 60px 40px;
+}
+.news-wrapper > div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.news-wrapper .standard {
+  margin: 20px 0px;
+}
+.news-itms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.news-itms > div {
+  margin: 20px 0px 20px 0px;
+  max-width: 300px;
+}
+.news-itms h3 {
+  padding: 20px 0px 0px 0px;
+  line-height: 28px;
+  font-weight: bolder;
 }
