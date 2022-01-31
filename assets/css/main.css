@@ -327,7 +327,6 @@ input[type="search"] {
 .ico_back_button,
 .ico_pause_button {
   background-repeat: no-repeat;
-
   background-position: center;
 }
 #side-text {
@@ -336,6 +335,7 @@ input[type="search"] {
   background-color: #1c5687;
   padding: 20px 40px;
 }
+
 #side-text h3,
 #side-text p {
   color: #fff !important;
