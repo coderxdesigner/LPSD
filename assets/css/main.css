@@ -437,8 +437,9 @@ footer h4 {
 .button-content {
   width: 100%;
   position: relative;
-  height: 100px;
-  margin: 30px 0px;
+  height: 80px;
+  overflow: hidden;
+  margin: 30px 0px 0px 0px;
 }
 .button-content .line {
   border-bottom: 2px solid #ccc;
@@ -471,7 +472,7 @@ button.svg:hover > svg {
 .follow {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   justify-items: center;
 }
