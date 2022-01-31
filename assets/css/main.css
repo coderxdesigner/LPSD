@@ -13,17 +13,17 @@ body {
 }
 
 h1 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 .lg-menu {
   font-size: 0.7rem;
 }
 p {
-  font-size: 0.75em;
+  font-size: 0.75rem;
   line-height: 30px;
 }
 img {
@@ -61,6 +61,10 @@ h4 {
 }
 a {
   color: #1c5687;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
 a.nav-lnk {
   color: #ffffff;
@@ -368,4 +372,106 @@ input[type="search"] {
   padding: 20px 0px 0px 0px;
   line-height: 28px;
   font-weight: bolder;
+}
+footer h4 {
+  color: #fff;
+}
+.links-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.links-wrapper > div {
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.links-wrapper p:not(:nth-child(4)) {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+.shortcuts {
+  width: 100%;
+}
+.shortcuts div {
+  line-height: 26px;
+  padding-top: 30px;
+  border-bottom: 1px solid #ccc;
+  font-size: 0.75rem;
+  font-weight: bolder;
+  transition: border-bottom 250ms ease-in-out;
+}
+.shortcuts > div:hover {
+  border-bottom: 1px solid #113a55;
+}
+.contact-wrapper,
+.important-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.contact-wrapper > div > div > span {
+  display: block;
+  color: #113a55;
+  font-size: 1rem;
+  font-weight: bolder;
+  line-height: 30px;
+}
+.pipe,
+.comma {
+  display: none !important;
+}
+.important-wrapper {
+  font-weight: bold;
+  line-height: 28px;
+  text-align: center;
+  font-size: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.button-content {
+  width: 100%;
+  position: relative;
+  height: 100px;
+  margin: 30px 0px;
+}
+.button-content .line {
+  border-bottom: 2px solid #ccc;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+}
+.button-content > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-content button {
+  position: relative;
+  margin: 10px;
+}
+button.svg {
+  width: 140px;
+}
+button.svg > svg {
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  fill: #fff;
+}
+button.svg:hover > svg {
+  fill: #113a55;
+}
+.follow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
 }

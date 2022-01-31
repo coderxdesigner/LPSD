@@ -33,11 +33,43 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: baseline;
     flex-wrap: wrap;
     width: 100%;
   }
   .news-itms > div {
-    width: 50%;
     max-width: 300px;
+  }
+  .links-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .links-wrapper > div {
+    width: 48%;
+  }
+
+  .contact-wrapper > div,
+  .important-wrapper > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-wrapper > div > div > span:nth-child(2),
+  .contact-wrapper > div > div > span,
+  .comma {
+    display: inline !important;
+  }
+  .pipe {
+    display: inline-block !important;
+    padding: 0px 10px 0px 13px;
+    font-weight: 200;
+  }
+  .important-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 }
